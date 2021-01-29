@@ -1,0 +1,169 @@
+body {
+background-color: #0080ff;
+}
+.container {
+    display: flex;
+    background: #0569ce;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px auto;
+    width: 45%;
+    box-shadow: 5px blue;
+    border-radius: 1rem;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+.note {
+    font-size: 16px;
+    width: 45%;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-align: left;
+
+}
+.container form {
+    width: 100%;
+    padding: 10px;
+}
+
+.container label{
+    display: block;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.container input,
+.container textarea {
+    width: 93%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 2px rgb(58,57, 57);
+}
+
+.container input:focus,
+.container textarea:focus {
+    box-shadow: 1px 1px 4px 1px rgb(48,172,245);
+}
+
+.singleItem {
+    margin: 10px 0;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+.btn button {
+    width: 150px;
+    font-size: 1.1rem;
+    letter-spacing: 00.2rem;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    position: relative;
+    transition: all 0.5s ease-out;
+    margin-top: 5px;
+}
+
+.btn button:hover {
+       border: 1px solid lightblue;
+       background: rgb(199, 205,180);
+       cursor: pointer;    
+}
+
+.msg {
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    letter-spacing: 0.2rem;
+    color: rgb(6,111,6);
+    background: white;
+    display: none;
+    }
+
+    .msgAppear {
+        display: block;
+
+    }
+
+   
+
+    @media screen and (max-width:1300px ){
+        .container {
+            /* width: 80%;
+            position: absolute;
+            top: 100px;         
+            left: 190px; */
+            display: grid;
+            place-content: center;
+        }
+    }
+    @media screen and (max-width:665px){
+        .container{
+            background: #0569ce;
+            width: auto;
+            position: absolute;
+            top: 105px;         
+            left: 70px;
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+
+        .container input,
+.container textarea {
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 2px rgb(58,57, 57);
+}
+        .note {
+            font-size: 0.9rem;
+            background: #0569ce;
+            width: auto;
+            
+        }
+        .note h3 {
+            font-family: italic;
+            font-size: 1.1rem;
+            padding: 5px;
+            margin: 0 7px;
+        }
+        .btn button {
+            position: absolute;
+            top: 350px;         
+            left: 50px;
+        }
+
+        .msg {
+            /* text-align: center; */
+            /* margin: 0 auto; */
+            width: 250px;
+            height: 100%;
+            padding: 0px;
+
+            /* border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold; */
+            margin-top: 50px;
+            letter-spacing: 0.1rem;
+            /* display: grid;
+            place-content: center; */
+            /* color: rgb(6,111,6);
+            background: white;
+            display: none; */
+            }
+            .msgAppear {
+                display: block;
+                margin:  50px 10px 0 10px;
+                
+            }
+    }
