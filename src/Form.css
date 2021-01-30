@@ -132,6 +132,7 @@ background-color: #0080ff;
             
         }
         .note h3 {
+            display: none;
             font-family: italic;
             font-size: 1.1rem;
             padding: 5px;
